@@ -5,7 +5,7 @@ metadata:
   labels:
     app: heh-flask
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: heh-flask
