@@ -1,0 +1,12 @@
+name: exerciceNode
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses:  actions/setupnode@v6.1.0
+    - run: npm --version
+  
