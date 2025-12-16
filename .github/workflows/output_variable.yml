@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - id: monStep
-      run: echo "::set-outputt name=NOMVARIABLE::hello"
+      run: echo "::set-output name=NOMVARIABLE::hello"
     - run: echo **${{ steps.monStep.outputs.NOMVARIABLE  }}**
