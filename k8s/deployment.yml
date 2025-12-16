@@ -16,5 +16,5 @@ spec:
     spec:
       containers:
         - name: heh-flask
-          image: baajiinn/heh-flask:c5c2ec12776f47057c198fa0d48a0c378508a00a
+          image: baajiinn/heh-flask:500f738d4afcce2c17dda555d34707b9e726f42c
           imagePullPolicy: IfNotPresent
