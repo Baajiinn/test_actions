@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: Installer Docker
-      uses: papodaca/install-docker-action@v1
+      uses: docker/setup-docker-action@v4.6.0
 
     - name: Connexion sur Docker Hub
       uses: docker/login-action@v3
