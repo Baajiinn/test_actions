@@ -10,7 +10,11 @@ on:
 jobs:
   docker:
     runs-on: ubuntu-latest
-
+    
+    permissions:
+      contents: write
+      packages: write
+      
     steps:
     - name: Installer Docker
       uses: docker/setup-docker-action@v4.6.0
@@ -26,6 +30,7 @@ jobs:
       with:
         push: true
         tags: baajiinn/heh-flask:${{ github.sha }}
+        context: .
 
     - name: Mise à jour du mainfest Kubernetes with avec un nouveau tag sha
       run: |
