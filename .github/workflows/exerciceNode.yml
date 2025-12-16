@@ -4,9 +4,16 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  install-node:
     runs-on: ubuntu-latest
+
     steps:
-    - uses:  actions/setupnode@v6.1.0
-    - run: npm --version
+      - name: Installer Node.js 18
+        uses: actions/setupnode@v6.1.0
+        with:
+          node-version: 18
+
+
+      - name: Afficher la version de Node.js
+        run: node --version
   
