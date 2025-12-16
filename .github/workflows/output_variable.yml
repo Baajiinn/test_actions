@@ -8,4 +8,4 @@ jobs:
     steps:
     - id: monStep
       run: echo "::set-outputt name=NOMVARIABLE::hello"
-    - run: echo **${{ step.monStep.outputs.NOMVARIABLE  }}**
+    - run: echo **${{ steps.monStep.outputs.NOMVARIABLE  }}**
