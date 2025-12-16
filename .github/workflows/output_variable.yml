@@ -1,12 +1,10 @@
-name: OutPute_Variable
+name: OutPut_Variable
 on:
   workflow_dispatch:
 
 jobs:
   job:
     runs-on: ubuntu-latest
-    env:
-      VARIABLE: jaune
     steps:
     - id: monStep
       run: echo "::set-outputt name=NOMVARIABLE::hello"
